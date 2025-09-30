@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Wasike | Data Analyst & Statistician</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #4a5568;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+            text-align: center;
+            animation: slideDown 0.8s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #11998e;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .location {
+            color: #ee0979;
+            font-weight: bold;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            color: #11998e;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #ee0979;
+        }
+
+        .about-text {
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .skill-card {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 50%, #ee0979 100%);
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(17, 153, 142, 0.4);
+        }
+
+        .skill-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .skill-card p {
+            font-size: 0.95em;
+            opacity: 0.9;
+        }
+
+        .project-card {
+            background: #f8f9fa;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .project-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: #764ba2;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .project-link:hover {
+            color: #667eea;
+        }
+
+        .working-on {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .work-item {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: transform 0.3s ease;
+        }
+
+        .work-item:hover {
+            transform: scale(1.05);
+        }
+
+        .education-item {
+            background: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border-left: 5px solid #764ba2;
+        }
+
+        .education-item h3 {
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .connect-links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .connect-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .connect-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .connect-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 2px 8px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Brian Wasike</h1>
+            <p class="subtitle">Data Analyst | Statistician | Machine Learning Enthusiast</p>
+            <p class="location">📍 Based in Kenya</p>
+            <p style="margin-top: 10px; color: #666;">BSc in Statistics + Certification in Data Science & Analysis</p>
+        </header>
+
+        <section class="section">
+            <h2>About Me</h2>
+            <p class="about-text">
+                I'm a passionate data professional with a strong foundation in statistics and hands-on experience in data science, machine learning, and analytics. 
+                I enjoy turning raw data into meaningful insights that drive smarter decision-making — especially in <span class="highlight">finance</span>, 
+                <span class="highlight">healthcare</span>, and <span class="highlight">social impact</span> fields.
+            </p>
+            <p class="about-text" style="margin-top: 15px;">
+                I'm currently enhancing my skills in Machine Learning (classification, regression, model evaluation), SQL (data extraction, transformation, queries), 
+                Python (Pandas, NumPy, Scikit-learn, Matplotlib), and Visualization (Power BI, Tableau, Seaborn).
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <p>Python, R, SQL</p>
+                </div>
+                <div class="skill-card">
+                    <h3>ML & Statistics</h3>
+                    <p>Regression, Classification, Hypothesis Testing, Feature Engineering</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Data Visualization</h3>
+                    <p>Power BI, Tableau, Matplotlib, Seaborn</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools</h3>
+                    <p>Git, Jupyter Notebook, Excel, Streamlit</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Soft Skills</h3>
+                    <p>Analytical Thinking, Communication, Problem Solving</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Portfolio Projects</h2>
+            
+            <div class="project-card">
+                <h3>🔹 Credit Risk Classification</h3>
+                <p>Built a machine learning model to predict credit risk using logistic regression and random forest. 
+                   Included EDA, feature engineering, and SHAP interpretation.</p>
+                <a href="https://github.com/brianwasike/credit-risk-classification" target="_blank" class="project-link">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>🔹 Health Data Analysis (Biostatistics)</h3>
+                <p>Performed statistical analysis on hospital readmission data, hypothesis testing, and visual insights for decision support.</p>
+                <a href="https://github.com/brianwasike/health-data-analysis" target="_blank" class="project-link">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>🔹 Sales Forecasting Dashboard</h3>
+                <p>Forecasted sales trends using ARIMA and displayed results on an interactive Streamlit dashboard.</p>
+                <a href="https://github.com/brianwasike/sales-forecasting-dashboard" target="_blank" class="project-link">View Project →</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Currently Working On</h2>
+            <div class="working-on">
+                <div class="work-item">🚀 Deploying ML models using Streamlit</div>
+                <div class="work-item">📊 Creating interactive dashboards with SQL + Python</div>
+                <div class="work-item">🏥 Expanding portfolio with healthcare-focused ML projects</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Education & Certifications</h2>
+            <div class="education-item">
+                <h3>Bachelor of Science in Statistics</h3>
+                <p>Mount Kenya University</p>
+            </div>
+            <div class="education-item">
+                <h3>Data Science / Analysis Certification</h3>
+                <p>ALX Africa</p>
+            </div>
+            <div class="education-item">
+                <h3>Courses in Progress</h3>
+                <p>Machine Learning, SQL, Python</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Connect With Me</h2>
+            <div class="connect-links">
+                <a href="https://www.linkedin.com/in/brian-wasike-8a865a297" target="_blank" class="connect-btn">LinkedIn</a>
+                <a href="mailto:bwasike01@gmail.com" class="connect-btn">Email</a>
+                <a href="https://github.com/bwasike01-droid" target="_blank" class="connect-btn">GitHub</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 Brian Wasike | Turning Data Into Insights 📊</p>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth scroll animation for sections
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'all 0.6s ease';
+            observer.observe(section);
+        });
+
+        // Add floating animation to skills cards
+        document.querySelectorAll('.skill-card').forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.1}s`;
+        });
+    </script>
+</body>
+</html>
