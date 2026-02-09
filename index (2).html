@@ -1,97 +1,286 @@
-# Brian Wasike
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Wasike | Data Analyst & Statistician</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 3px solid #007bff;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .location {
+            color: #888;
+            margin-bottom: 10px;
+        }
+        
+        .education-badge {
+            background-color: #e7f3ff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin: 30px 0 20px 0;
+        }
+        
+        h3 {
+            color: #333;
+            margin: 20px 0 10px 0;
+        }
+        
+        .about {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-left: 4px solid #007bff;
+            margin-bottom: 20px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .skill-card {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 3px solid #007bff;
+        }
+        
+        .skill-card h3 {
+            margin-top: 0;
+            color: #007bff;
+        }
+        
+        .project {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border-left: 4px solid #28a745;
+        }
+        
+        .project h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 8px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        
+        .current-work {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+        
+        .current-work ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .education-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .connect {
+            text-align: center;
+            margin: 40px 0 20px 0;
+        }
+        
+        .connect a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .connect a:hover {
+            background-color: #0056b3;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Brian Wasike</h1>
+            <p class="subtitle">Data Analyst | Statistician | Machine Learning Enthusiast</p>
+            <p class="location">Based in Kenya</p>
+            <div class="education-badge">BSc in Statistics + Certification in Data Science & Analysis</div>
+        </header>
 
-Data Analyst | Statistician | Machine Learning Enthusiast
+        <section>
+            <h2>About Me</h2>
+            <div class="about">
+                <p>I'm a passionate data professional with a strong foundation in statistics and hands-on experience in data science, machine learning, and analytics. I enjoy turning raw data into meaningful insights that drive smarter decision-making — especially in finance, healthcare, and social impact fields.</p>
+                <p style="margin-top: 15px;">My expertise includes Machine Learning (classification, regression, model evaluation), SQL (data extraction, transformation, queries), Python (Pandas, NumPy, Scikit-learn, Matplotlib), and Visualization (Power BI, Tableau, Seaborn).</p>
+            </div>
+        </section>
 
-Based in Kenya
+        <section>
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <p>Python, R, SQL</p>
+                </div>
+                <div class="skill-card">
+                    <h3>ML & Statistics</h3>
+                    <p>Regression, Classification, Hypothesis Testing, Feature Engineering</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Data Visualization</h3>
+                    <p>Power BI, Tableau, Matplotlib, Seaborn</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools</h3>
+                    <p>Git, Jupyter Notebook, Excel, Streamlit</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Soft Skills</h3>
+                    <p>Analytical Thinking, Communication, Problem Solving</p>
+                </div>
+            </div>
+        </section>
 
-BSc in Statistics + Certification in Data Science & Analysis
+        <section>
+            <h2>Portfolio Projects</h2>
+            
+            <div class="project">
+                <h3>Tesla Stock Price Forecasting</h3>
+                <p>Advanced time series analysis and price forecasting using ARIMA and regression models. Includes comprehensive data visualization, statistical modeling, and predictive analytics for Tesla stock trends.</p>
+                <a href="https://bwasike01-droid.github.io/teslastockprediction/" class="btn" target="_blank">View Project</a>
+            </div>
 
-## About Me
+            <div class="project">
+                <h3>Credit Risk Classification</h3>
+                <p>Built a machine learning model to predict credit risk using logistic regression and random forest. Included EDA, feature engineering, and SHAP interpretation.</p>
+                <a href="https://bwasike01-droid.github.io/credit-risk/" class="btn" target="_blank">View Project</a>
+            </div>
 
-I'm a passionate data professional with a strong foundation in statistics and hands-on experience in data science, machine learning, and analytics.
-I enjoy turning raw data into meaningful insights that drive smarter decision-making — especially in finance,
-healthcare, and social impact fields.
+            <div class="project">
+                <h3>Health Data Analysis (Biostatistics)</h3>
+                <p>Performed statistical analysis on hospital readmission data, hypothesis testing, and visual insights for decision support.</p>
+                <a href="https://github.com/brianwasike/health-data-analysis" class="btn" target="_blank">View Project</a>
+            </div>
 
-My expertise includes Machine Learning (classification, regression, model evaluation), SQL (data extraction, transformation, queries),
-Python (Pandas, NumPy, Scikit-learn, Matplotlib), and Visualization (Power BI, Tableau, Seaborn).
+            <div class="project">
+                <h3>Sales Dashboard Using Power BI</h3>
+                <p>Forecasted sales trends using ARIMA and displayed results on an interactive Streamlit dashboard.</p>
+                <a href="https://github.com/bwasike01-droid/powerbi-sales-analysis" class="btn" target="_blank">View Project</a>
+            </div>
 
-## Skills
+            <div class="project">
+                <h3>Cancer Analysis Report</h3>
+                <p>Interactive data analysis and visualization of cancer datasets with comprehensive statistical insights and predictive modeling capabilities.</p>
+                <a href="https://bwasike01-droid.github.io/cancer-analysis/" class="btn" target="_blank">View Live Report</a>
+            </div>
+        </section>
 
-### Programming
+        <section>
+            <h2>Currently Working On</h2>
+            <div class="current-work">
+                <ul>
+                    <li>Deploying ML models using Streamlit</li>
+                    <li>Creating interactive dashboards with SQL + Python</li>
+                    <li>Expanding portfolio with healthcare-focused ML projects</li>
+                </ul>
+            </div>
+        </section>
 
-Python, R, SQL
+        <section>
+            <h2>Education & Certifications</h2>
+            <div class="education-section">
+                <h3>Bachelor of Science in Statistics</h3>
+                <p>Mount Kenya University</p>
+                
+                <h3 style="margin-top: 20px;">Data Science / Analysis Certification</h3>
+                <p>ALX Africa | Completed 2025</p>
+            </div>
+        </section>
 
-### ML & Statistics
+        <section class="connect">
+            <h2>Connect With Me</h2>
+            <a href="https://www.linkedin.com/in/brian-wasike-8a865a297" target="_blank">LinkedIn</a>
+            <a href="mailto:briannywasike@gmail.com">Email</a>
+            <a href="https://github.com/bwasike01-droid" target="_blank">GitHub</a>
+        </section>
+    </div>
 
-Regression, Classification, Hypothesis Testing, Feature Engineering
-
-### Data Visualization
-
-Power BI, Tableau, Matplotlib, Seaborn
-
-### Tools
-
-Git, Jupyter Notebook, Excel, Streamlit
-
-### Soft Skills
-
-Analytical Thinking, Communication, Problem Solving
-
-## Portfolio Projects
-
-### Tesla Stock Price Forecasting
-
-Advanced time series analysis and price forecasting using ARIMA and regression models. Includes comprehensive data visualization, statistical modeling, and predictive analytics for Tesla stock trends.
-
-[View Project](https://bwasike01-droid.github.io/teslastockprediction/)
-
-### Credit Risk Classification
-
-Built a machine learning model to predict credit risk using logistic regression and random forest.
-Included EDA, feature engineering, and SHAP interpretation.
-
-[View Project](https://bwasike01-droid.github.io/credit-risk/)
-
-### Health Data Analysis (Biostatistics)
-
-Performed statistical analysis on hospital readmission data, hypothesis testing, and visual insights for decision support.
-
-[View Project](https://github.com/brianwasike/health-data-analysis)
-
-### Sales Dashboard Using Power BI
-
-Forecasted sales trends using ARIMA and displayed results on an interactive Streamlit dashboard.
-
-[View Project](https://github.com/bwasike01-droid/powerbi-sales-analysis)
-
-### Cancer Analysis Report
-
-Interactive data analysis and visualization of cancer datasets with comprehensive statistical insights and predictive modeling capabilities.
-
-[View Live Report](https://bwasike01-droid.github.io/cancer-analysis/)
-
-## Currently Working On
-
-Deploying ML models using Streamlit
-
-Creating interactive dashboards with SQL + Python
-
-Expanding portfolio with healthcare-focused ML projects
-
-## Education & Certifications
-
-### Bachelor of Science in Statistics
-
-Mount Kenya University
-
-### Data Science / Analysis Certification
-
-ALX Africa | Completed 2025
-
-## Connect With Me
-
-[LinkedIn](https://www.linkedin.com/in/brian-wasike-8a865a297)
-[briannywasike@gmail.com](mailto:briannywasike@gmail.com)
-[GitHub](https://github.com/bwasike01-droid)
-
-© 2025 Brian Wasike | Turning Data Into Insights
+    <footer>
+        <p>&copy; 2025 Brian Wasike | Turning Data Into Insights</p>
+    </footer>
+</body>
+</html>
